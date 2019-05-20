@@ -3,7 +3,7 @@ version: 2.1
 
 commands:
   s3deploy:
-    description: "Deploy to S3 and invalidate cache"
+    description: "Deploy to S3"
     parameters:
       to:
         type: string
@@ -28,6 +28,9 @@ jobs:
     environment:
       PUBLIC_URL: https://conference.codeyourfuture.io
     steps:
+      - checkout   
+      - persist_to_workspace:
+          root: .     
       - attach_workspace:
           at: .
       - run:
