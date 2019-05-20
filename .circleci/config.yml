@@ -12,12 +12,14 @@ commands:
     steps:
       - run: |
           aws configure set preview.cloudfront true
+      - run: |          
           aws s3 sync ./ s3://<< parameters.to >> \
             --acl public-read --delete \
             --cache-control max-age=31536000 
-          # aws cloudfront create-invalidation \
-          #     --distribution-id << parameters.cf_distribution_id >> \
-          #     --paths /\*
+      - run: |            
+          aws cloudfront create-invalidation \
+              --distribution-id << parameters.cf_distribution_id >> \
+              --paths /\*
 jobs:
   deploy_production:
     docker:
