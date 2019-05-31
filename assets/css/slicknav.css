@@ -53,7 +53,7 @@
   .slicknav_nav ul {
     display: block; }
   .slicknav_nav li {
-    display: block; 
+    display: block;
     line-height: 30px;
   }
   .slicknav_nav li:not(:first-child){
@@ -139,3 +139,9 @@
   line-height: 30px;
   padding: 7px 12px;
   height: 44px; }
+
+@media (max-width: 991px) {
+	.slicknav_nav {
+	font-size: 1.25em;
+	}
+}

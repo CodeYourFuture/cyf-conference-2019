@@ -611,7 +611,7 @@ a.back-to-top:focus {
 }
 
 .navbar-brand img {
-	width: 75%;
+	width: 70%;
 }
 
 .top-nav-collapse {
@@ -834,17 +834,18 @@ a.back-to-top:focus {
 	display: none;
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {*/
+@media screen and (max-width: 991px) {
 	.navbar-header {
 		width: 100%;
 	}
 	.navbar-brand {
 		position: absolute;
-		padding: 15px 15px;
+		/*padding: 15px 15px;*/
 		top: 0;
 	}
 	.navbar-brand img {
-		width: 75%;
+		width: 65%;
 	}
 	#mobile-menu {
 		display: none;
