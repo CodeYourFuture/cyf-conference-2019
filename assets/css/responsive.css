@@ -69,9 +69,9 @@
   #pricing .price-block-wrapper .pricing-list {
     padding: 10px 35px 10px 45px;
   }
-  #sponsors .spnsors-logo img {
+  /*#sponsors .spnsors-logo img {
     width: 80%;
-  }
+  }*/
   .padding-none:nth-child(1) {
     border-left: none;
   }
@@ -128,7 +128,7 @@
     padding: 10px 60px 10px 45px;
   }
   #sponsors .spnsors-logo {
-    padding: 30px;
+    padding: 20px;
   }
   .padding-none:nth-child(1) {
     border-left: none;
@@ -206,6 +206,7 @@
   }
   #sponsors .spnsors-logo {
     margin-bottom: 15px;
+		padding: 15px;
   }
   .blog-item .descr h3 a {
     font-size: 18px;
@@ -236,9 +237,9 @@
   .thumb-left img {
     width: 60%;
   }
-  #sponsors .spnsors-logo img {
+  /*#sponsors .spnsors-logo img {
     width: 80%;
-  }
+  }*/
   .footer-area h3 {
     margin-top: 30px;
   }
